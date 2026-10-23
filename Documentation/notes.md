@@ -3,7 +3,7 @@ https://dennybritz.com/posts/wildml/implementing-a-neural-network-from-scratch/
 
 Below are some notes i copied from the blog:
 
-> During training a neural network, The number of nodes in the input layer is determined by the dimensionality of our data, 2. Similarly, the number of nodes in the output layer is determined by the number.
+> During training a neural network, The number of nodes in the input layer is determined by the dimensionality of our data, 2. Similarly, the number of nodes in the output layer is determined by the number of classes.
 > softmax is a way to convert raw scores to probabilities
 > Variations such as SGD (stochastic gradient descent) or minibatch gradient descent typically perform better in practice. So if you are serious you’ll want to use one of these, and ideally you would also decay the learning rate over time.
 
