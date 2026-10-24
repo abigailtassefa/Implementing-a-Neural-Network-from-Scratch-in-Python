@@ -77,7 +77,10 @@ def build_model(nn_hdim,num_passes=20000, print_loss=False):
           delta3[range(num_examples),y]-=1
           dw2=(a1.T).dot(delta3)
           db2=np.sum(delta3, axis=0, keepdims=True)
-          delta2=
+          delta2=delta3.dot(w2.T) * (1 - np.power(a1, 2))
+          dw1=np.dot(X.T, delta2)
+          db1=np.sum(delta2, axis=0)
+          
 
           
 
